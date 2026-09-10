@@ -1,63 +1,38 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffe4ec, #e0f2ff);
-  min-height: 100vh;
-}
-
-.container {
-  padding: 50px 30px;
+.App {
   text-align: center;
 }
 
-.container h1 {
-  color: #6c4ab6;
-  font-size: 36px;
-  margin-bottom: 35px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.card-row {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
-  gap: 25px;
-  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.profile-card {
-  width: 250px;
-  padding: 25px;
-  background: linear-gradient(145deg, #ffffff, #f8f0ff);
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(108, 74, 182, 0.2);
-  text-align: left;
-  border: 2px solid #eadcff;
-  transition: transform 0.3s, box-shadow 0.3s;
+.App-link {
+  color: #61dafb;
 }
 
-.profile-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(108, 74, 182, 0.3);
-}
-
-.profile-card h3 {
-  color: #6c4ab6;
-  font-size: 22px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.profile-card p {
-  color: #555;
-  font-size: 16px;
-}
-
-.profile-card ul {
-  padding-left: 20px;
-}
-
-.profile-card li {
-  color: #e05a8a;
-  margin-bottom: 8px;
-  font-weight: bold;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
