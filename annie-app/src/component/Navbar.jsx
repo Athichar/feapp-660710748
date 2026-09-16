@@ -16,6 +16,7 @@ function Navbar() {
         <NavLink to="/" className={linkClass}>หน้าแรก</NavLink>
         <NavLink to="/movies" className={linkClass}>หนังทั้งหมด</NavLink>
         <NavLink to="/about" className={linkClass}>เกี่ยวกับเรา</NavLink>
+        <NavLink to="/watchlist" className={linkClass}>ลิสต์ของฉัน</NavLink>
       </div>
       <button className="rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold
                          text-white hover:bg-cyan-700 transition">

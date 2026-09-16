@@ -9,6 +9,7 @@ import About from './page/About';
 import {Routes, Route} from 'react-router-dom';
 import MovieDetail from './component/MovieDetail';
 import NotFound from './page/NotFound';
+import Watchlist from './page/Watchlist';
 
 
 // const members = [
@@ -94,6 +95,7 @@ function App() {
           <Route path="/movies/:id" element={<MovieDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
       </main>
       <Footer />                {/* ← เห็นทุกหน้า */}
