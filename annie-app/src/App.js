@@ -5,11 +5,11 @@ import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import Home from './page/Home';
 import Movies from './page/Movies';
-import About from './page/About';
 import {Routes, Route} from 'react-router-dom';
 import MovieDetail from './component/MovieDetail';
 import NotFound from './page/NotFound';
-import Watchlist from './page/Watchlist';
+import About from './page/About';
+
 
 
 // const members = [
@@ -93,9 +93,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieDetail />} />
-          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/watchlist" element={<Watchlist />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       <Footer />                {/* ← เห็นทุกหน้า */}

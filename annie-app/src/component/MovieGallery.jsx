@@ -44,3 +44,4 @@ function MovieGallery() {
 }
 
 export default MovieGallery;
+

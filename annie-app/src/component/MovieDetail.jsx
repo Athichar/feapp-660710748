@@ -11,22 +11,18 @@ function MovieDetail() {
   }
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col gap-8 p-8 md:flex-row">
-      {movie.poster && (
-        <img src={movie.poster} alt={`โปสเตอร์ ${movie.title}`}
-          className="w-56 shrink-0 self-start rounded-2xl shadow-lg" />
-      )}
-      <div>
-        <h1 className="text-3xl font-bold text-slate-800">{movie.title}</h1>
-        <p className="mt-1 text-slate-500">ปี {movie.year} · {movie.genre}</p>
-        <p className="mt-4 leading-relaxed text-slate-700">{movie.detail}</p>
-        <Link to="/movies"
-          className="mt-6 inline-block rounded-lg bg-cyan-600 px-4 py-2
-                         font-semibold text-white hover:bg-cyan-700 transition">
-          ← กลับไปหน้าหนังทั้งหมด
-        </Link>
-        <ReviewForm movieTitle={movie.title} />
-      </div>
+    <div className="mx-auto max-w-2xl p-8">
+      <h1 className="text-3xl font-bold text-slate-800">{movie.title}</h1>
+      <p className="mt-1 text-slate-500">ปี {movie.year} · {movie.genre}</p>
+      <p className="mt-4 leading-relaxed text-slate-700">{movie.detail}</p>
+
+      <ReviewForm movieTitle={movie.title} />
+
+      <Link to="/movies"
+        className="mt-6 inline-block rounded-lg bg-cyan-600 px-4 py-2
+                       font-semibold text-white hover:bg-cyan-700 transition">
+        ← กลับไปหน้าหนังทั้งหมด
+      </Link>
     </div>
   );
 }
